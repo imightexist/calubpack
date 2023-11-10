@@ -1,2 +1,2 @@
 # calubpack
-archive.org meanie
+https://github.com/imightexist/calubpack/raw/main/calubpack.exe
