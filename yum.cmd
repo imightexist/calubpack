@@ -1,5 +1,5 @@
 net session
-if %errorlevel% == 1 goto exit
+if %errorlevel% == 1 exit
 
 aria2c -x16 -s16 -m16 https://archive.org/download/7zcmd/7z.dll
 aria2c -x16 -s16 -m16 https://archive.org/download/7zcmd/7z.exe
