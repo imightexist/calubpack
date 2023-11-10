@@ -1,3 +1,6 @@
+net session
+if %errorlevel% == 1 goto exit
+
 aria2c -x16 -s16 -m16 https://archive.org/download/7zcmd/7z.dll
 aria2c -x16 -s16 -m16 https://archive.org/download/7zcmd/7z.exe
 aria2c -x16 -s16 -m16 https://archive.org/download/calubcraft/glupdate2.7z/comp/gl32.dll
@@ -16,3 +19,4 @@ del "%userprofile%\Desktop\minecraft\! install.cmd"
 pause
 cd "%userprofile%\Desktop\minecraft"
 "! run.bat"
+exit
