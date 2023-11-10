@@ -22,4 +22,3 @@ del "%userprofile%\Desktop\minecraft\! install.cmd"
 pause
 cd "%userprofile%\Desktop\minecraft"
 "! run.bat"
-exit
