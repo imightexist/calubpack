@@ -1,3 +1,4 @@
+pushd %~dp0
 set glupdate=1
 net session
 if %errorlevel% == 1 exit
