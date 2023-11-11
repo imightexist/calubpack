@@ -7,13 +7,13 @@ aria2c https://raw.githubusercontent.com/imightexist/calubpack/main/fix.cmd
 if %glupdate% == 0 goto yip
 net session
 if %errorlevel% == 1 exit
-aria2c -x16 -s16 -m16 https://archive.org/download/calubcraft/glupdate2.7z/comp/gl32.dll
+rem aria2c -x16 -s16 -m16 https://archive.org/download/calubcraft/glupdate2.7z/comp/gl32.dll
 aria2c -x16 -s16 -m16 https://archive.org/download/calubcraft/glupdate2.7z/comp/gl64.dll
 takeown /f C:\windows\system32\opengl32.dll
-takeown /f C:\windows\syswow64\opengl32.dll
+rem takeown /f C:\windows\syswow64\opengl32.dll
 icacls C:\windows\system32\opengl32.dll /grant Administrators:F
-icacls C:\windows\syswow64\opengl32.dll /grant Administrators:F
-copy /y gl32.dll C:\windows\syswow64\opengl32.dll
+rem icacls C:\windows\syswow64\opengl32.dll /grant Administrators:F
+rem copy /y gl32.dll C:\windows\syswow64\opengl32.dll
 copy /y gl64.dll C:\windows\system32\opengl32.dll
 
 :yip
